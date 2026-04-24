@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar {
+            background: #0f172a;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        .hero {
+            text-align: center;
+            background: linear-gradient(to right,#0f172a,#1e293b);
+            padding: 80px 20px;
+            color: white;
+        }
+        .projects {
+            padding: 40px;
+            background: #f1f5f9;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media(max-width:700px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>Palak</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>Hi, I'm Palak</h1>
+        <p>Building My Coding Journey Publicly</p>
+    </div>
+    <div class="projects">
+        <h2 style="text-align: center;">My Projects</h2>
+        <div class="grid">
+            <div class="card">Project 1</div>
+            <div class="card">Project 2</div>
+            <div class="card">Project 3</div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>2026 Palak</p>
+    </div>
+</body>
+</html>
