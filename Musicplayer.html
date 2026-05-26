@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right,#0f172a,#1e293b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .player {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            width: 280px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        h2 {
+            margin: 15px 0 10px;
+        }
+        p {
+            color: #cbd5e1;
+        }
+        img {
+            width: 100%;
+            border-radius: 15px;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        button {
+            background: #38bdf8;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        .player:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="player">
+        <img src="images/sunsathiya.jpg">
+        <h2>Sun_Saathiya_Song</h2>
+        <p>Shreya Ghosal</p>
+        <div class="controls">
+            <button>⏮</button>
+            <button>▶</button>
+            <button>⏭</button>
+        </div>
+    </div>
+</body>
+</html>
