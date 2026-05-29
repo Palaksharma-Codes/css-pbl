@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Pricing</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f5f9;
+            color: white;
+        }
+        h1 {
+            color: #555;
+        }
+        .section {
+            padding: 60px 30px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #1e293b;
+            padding: 30px 20px;
+            width: 250px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .featured {
+                border: 1px solid #38bdf8;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 40px;
+            margin: 20px 0;
+            color: #38bdf8;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 18px;
+            cursor: pointer;
+        }
+        button:hover {
+            transform: scale(1.05);
+            background: #0ea5e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1>Pricing Plans</h1>
+        <div class="container">
+            <div class="card">
+                <h2>Basic</h2>
+                <div class="price">$5</div>
+                <ul>
+                    <li>Project</li>
+                    <li>Basic Support</li>
+                    <li>Limited Access</li>
+                </ul>
+                <button>Choose</button>
+            </div> 
+            <div class="card featured">
+                <h2>Pro</h2>
+                <div class="price">$12</div>
+                <ul>
+                    <li>10 Projects</li>
+                    <li>Priority Support</li>
+                    <li>Full Access</li>
+                </ul>
+                <button>Choose</button>
+            </div>
+            <div class="card">
+                <h2>Premium</h2>
+                <div class="price">$20</div>
+                <ul>
+                    <li>Unlimited Projects</li>
+                    <li>24/7 Support</li>
+                    <li>Everything Included</li>
+                </ul>
+                <button>Choose</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
