@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ccc;
+            display: flex;
+        }
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background: #0f172a;
+            color: white;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            margin-bottom: 30px;
+        }
+        .sidebar p {
+            margin: 15px 0;
+            cursor: pointer;
+        }
+        .sidebar p:hover {
+            color: #0ea5e9;
+        }
+        .main {
+            flex: 1;
+            padding: 20px;
+        }
+        .topbar {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(autofit,minmax(2000px,1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .numbers {
+            font-size: 30px;
+            color: #0ea5e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <p>Home</p>
+        <p>Analytics</p>
+        <p>Projects</p>
+        <p>Settings</p>
+    </div>
+    <div class="main">
+        <div class="topbar">Welcome Back Palak!</div>
+        <div class="cards">
+            <div class="card">
+                <div class="numbers">28</div>
+                <p>Projects</p>
+            </div>
+            <div class="card">
+                <div class="numbers">120+</div>
+                <p>Hours</p>
+            </div>
+            <div class="card">
+                <div class="numbers">100%</div>
+                <p>Consistency</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
